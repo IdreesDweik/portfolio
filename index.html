@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idrees Hasan Dweik</title>
+    <link rel="icon" href="IHDwhite.png" type="image/icon type">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/94b26519ee.js" crossorigin="anonymous"></script>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .nav {
+        height: 50px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: #E3F4F4;
+        position: sticky;
+    }
+
+    .nav > .nav-header {
+        display: inline;
+    }
+
+   .nav > .nav-header > .nav-title {
+        display: inline-block;
+        font-size: 20px;
+        color: #fff;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .nav > .nav-btn {
+        display: none;
+    }
+
+    .nav > .nav-links {
+        display: inline;
+        float: right;
+        font-size: 18px;
+    }
+
+    .nav > .nav-links > a {
+        display: inline-block;
+        padding: 13px 10px 13px 10px;
+        text-decoration: none;
+        color: black; 
+    }
+
+    .nav > .nav-links > a:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .nav > #nav-check {
+        display: none;
+    }
+
+    @media (max-width:600px) {
+       .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+       display: block;
+       width: 25px;
+       height: 10px;
+       border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+       position: absolute;
+       display: block;
+       width: 100%;
+       background-color: #4A55A2;
+       height: 0px;
+       transition: all 0.3s ease-in;
+       overflow-y: hidden;
+       top: 50px;
+       left: 0px;
+    }
+    .nav > .nav-links > a {
+       display: block;
+       width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+       height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+       height: calc(100vh - 50px);
+       overflow-y: auto;
+    }
+}
+           
+
+         #Home {
+            background-image: url(https://thumbs.gfycat.com/DefiniteImmenseHalicore-size_restricted.gif);
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            font-family: 'Inconsolata', monospace;
+            font-size: 20px;
+            color: #E3F4F4;
+            & button {
+                background-color: transparent;
+                border: 2px solid rgb(215, 215, 215);
+                border-radius: 4px;
+                color: rgb(215, 215, 215);
+
+            }
+        }
+
+        main {
+            width: 75%;
+            margin: 0 auto;
+        }
+        h3 {
+            text-align: center;
+            font-family: 'Inconsolata', monospace;
+        }
+
+        #Aboutme {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        #Projects {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        #Skills{
+            padding-left: 28%;
+        }
+
+        #Contactme {
+            display: flex;
+            justify-content: space-around;
+            font-size: 40px;
+        }
+
+        footer {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+          <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+              <div class="nav-title">
+                <img src="IHDblack.png" width="60px" alt="">
+              </div>
+            </div>
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            
+            <div class="nav-links">
+              <a href="#Home">Home</a>
+              <a href="#Aboutme">About me</a>
+              <a href="#Skills">Skills</a>
+              <a href="#Projects">Projects</a>
+              <a href="#Contactme">Contct me</a>
+            </div>
+          </div>
+
+          <section id="Home">   
+            <ul style="list-style-type: none;">
+                <li>Hello, I'm</li>
+                <li style="font-size: 40px;">Idrees Dweik</li>
+                <li>Full stack web developer</li><br>
+                <a href="https://drive.google.com/file/d/1_c_2v9QjVcbeWRs9pjtR_0m1TJYwt4Su/view?usp=sharing" target="_blank" style="text-decoration: none; color: #E3F4F4;"><li><button>Curriculum vitae CV</a></button></li></a>
+            </ul>
+          </section>
+
+          <br><br>
+
+    <main>
+
+        <h3>About me</h3>
+        <section id="Aboutme">
+            <div><img src="me.jpg" width="250" alt=""></div>
+            <div style="padding-left: 20px;">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit illo veritatis eaque magnam quibusdam laudantium ab tenetur nobis id. Repudiandae quas eveniet neque totam odit placeat soluta animi perferendis dolorum?<br><br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus quas rem quos officiis accusamus numquam libero dolor alias vero. Maxime natus totam suscipit architecto eaque magnam magni quisquam ea. Deserunt.
+            </p>
+            </div>
+        </section>
+
+        
+
+        <br><br>
+
+        <h3>Skills</h3>
+        <section id="Skills">
+            <img src="HTML-CSS-Review.png" width="400px" alt="">
+        </section>
+
+        <h3>Projects</h3>
+        <section id="Projects">
+                <a href="https://idreesdweik.github.io/HTML_CSS_Task/"><img src="OBJECTS.png" width="250px" alt=""></a>
+                <a href="https://idreesdweik.github.io/first_project/"><img src="OBJECTS.png" width="250px" alt=""></a>
+                <a href="https://idreesdweik.github.io/second_project/"><img src="OBJECTS.png" width="250px" alt=""></a>
+        </section>
+
+        <br><br>
+
+        <footer style="background-color: #E3F4F4;">
+
+        <h3>Contact me</h3>
+        <section id="Contactme">
+            <i class="fa-brands fa-linkedin" style="color: #0a66c7;"><a href="https://www.linkedin.com/in/idrees-dweik-254789230/"></a></i>
+            <i class="fa-brands fa-github"><a href="https://github.com/IdreesDweik"></a></i>
+            <i class="fa-solid fa-envelope"><a href="https://www.linkedin.com/in/idrees-dweik-254789230/"></a></i>
+        </section>
+
+    </footer>
+
+    </main>
+
+
+    
+</body>
+</html>
