@@ -5,7 +5,7 @@ body{
     margin: 0;
 }
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 12px;
   }
   
   /* Track */
@@ -24,7 +24,7 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background: #1B6B93; 
   }
-  
+
 .nav {
     height: 50px;
     width: 100%;
@@ -133,6 +133,8 @@ body{
             border: 2px solid rgb(215, 215, 215);
             border-radius: 4px;
         }
+
+        
     }
 
     .stripe {
@@ -162,31 +164,29 @@ body{
         font-family: 'Inconsolata', monospace;
     }
 
-    #Aboutme {
-        display: grid;
-        grid-template-columns: auto auto;
-        font-size: 100%;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: auto auto;
+    .flex {
+        display: flex;
+        justify-content: center;
+        & div{
+            width: 25%;
+        }
+        & img {
+            width: 100%;
+            float: right;
+        }
     }
 
     #Projects {
         width: 100%;
         display: flex;
         justify-content: center;
-        padding: 0px;
-        
-        & li{
-            width: 20%;
-            margin: 0 auto;
-        }
+        padding: 1px;
     }
 
     #Skills{
-        padding-left: 28%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
 
     #Contactme {
