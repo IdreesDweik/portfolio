@@ -32,18 +32,19 @@
     left: 0;
     background-color: #E3F4F4;
     position: sticky;
+    display: flex;
+    justify-content: space-around;
 }
 
 .nav > .nav-header {
-    display: inline;
+    display: flex;
 }
 
-.nav > .nav-header > .nav-title {
+ .nav > .nav-header > .nav-title {
     display: inline-block;
-    font-size: 20px;
-    color: br;
+    font-size: 100px;
     padding: 5px 5px 5px 5px;
-}
+} 
 
 .nav > .nav-btn {
     display: none;
@@ -51,15 +52,14 @@
 
 .nav > .nav-links {
     display: inline;
-    float: right;
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Inconsolata', monospace;
 }
 
 .nav > .nav-links > a {
     display: inline-block;
     padding: 13px 10px 13px 10px;
-    margin-top: 2px;
+    margin-top: 1px;
     text-decoration: none;
     color: #3F2305; 
 }
@@ -72,7 +72,8 @@
     display: none;
 }
 
-@media (max-width:600px) {
+@media (max-width:720px) {
+
    .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -116,23 +117,34 @@
    height: calc(100vh - 50px);
    overflow-y: auto;
 }
+
 }
        
 
      #Home {
         background-image: url(https://thumbs.gfycat.com/DefiniteImmenseHalicore-size_restricted.gif);
         background-size: cover;
-        height: 350px;
+        height: 100%;
         display: flex;
         align-items: center;
         font-family: 'Inconsolata', monospace;
         font-size: 1.5vw;
         color: #E3F4F4;
+        padding: 1%;
+        & ul{
+            padding: 0px 10px;
+            margin: 0;
+
+        }
         & button {
             background-color: transparent;
             border: 2px solid rgb(215, 215, 215);
-            border-radius: 4px;
+            color: #E3F4F4;
+            font-size: 1.5vw;
+            border-radius: 12px;
+            padding: 2%;
         }
+        
 
         
     }
@@ -149,7 +161,6 @@
         }
     }
 
-
     main {
         color: #3F2305;
         width: 75%;
@@ -158,20 +169,21 @@
     h2 {
         text-align: center;
         font-family: 'Inconsolata', monospace;
+        font-size: 2.5vw;
     }
 
-
-    #Projects {
+    .Education {
         display: flex;
-        justify-content: space-around;
-        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 2vw;
     }
 
     .stripe {
         background-image: linear-gradient(45deg, #1B6B93 28.57%, #E3F4F4 28.57%, #E3F4F4 50%, #1B6B93 50%, #1B6B93 78.57%, #E3F4F4 78.57%, #E3F4F4 100%);
         background-size: 9.9px 9.9px;
         border: inset;
-        padding: 3px;
+        padding: 0.4%;
     }
 
     h3 {
@@ -184,36 +196,73 @@
         font-weight: bold;
     }
 
-    #Skills{
+    .Experinces > div{
         display: flex;
         justify-content: space-around;
         align-items: center;
+        font-size: 2vw;
+        & img {
+            width: 15%;
+        }
+        & p {
+            text-align: center;
+        }
+    }
+
+    .Projects{
+        display: flex;
+        justify-content: space-around;
+         & img{
+            width: 100%;
+         }
+        
+    }
+
+    figure {
+        border: 2px #1B6B93 solid;
+        padding: 2px;
+        width: 90%;
+        margin: 0%;
+        
+      }
+      
+     figcaption {
+        background-color: #E3F4F4;
+        color: #3F2305;
+        font-size: 2vw;
+        font-family: 'Inconsolata', monospace;
+        padding: 2px;
+        text-align: center;
+      }
+
+    .Skills {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        font-size: 12vw;
+        padding: 0;
+        margin: 0px;
+        & figure {
+            border: 2px #1B6B93 solid;
+            padding: 2px;
+            width: 100%;
+            margin: 0%;
+            
+          }
     }
 
     #Contactme {
         display: flex;
         justify-content: space-around;
-        font-size: 40px;
+        font-size: 4vw;
     }
 
     footer {
         color: #3F2305;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 0.4%;
+        padding-bottom: 0.4%;
     }
-    figure {
-    border: 2px #1B6B93 solid;
-    padding: px;    
-  }
-  
-  figcaption {
-    background-color: #E3F4F4;
-    color: #3F2305;
-    font-size: 1.5vw;
-    font-family: 'Inconsolata', monospace;
-    padding: 2px;
-    text-align: center;
-  }
 
 
     /* .container {
